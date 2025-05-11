@@ -1,0 +1,179 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.filter-form {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.filter-form div {
+    display: flex;
+    flex-direction: column;
+}
+.filter-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.filter-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.filter-form button {
+    padding: 8px 15px;
+}
+
+.button, button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover, button:hover {
+    background-color: #0056b3;
+}
+.add-button {
+    margin-bottom: 20px;
+    background-color: #28a745;
+}
+.add-button:hover {
+    background-color: #1e7e34;
+}
+.edit-button {
+    background-color: #ffc107;
+    color: #212529;
+}
+.edit-button:hover {
+    background-color: #e0a800;
+}
+.delete-button {
+    background-color: #dc3545;
+}
+.delete-button:hover {
+    background-color: #c82333;
+}
+.cancel-button {
+    background-color: #6c757d;
+}
+.cancel-button:hover {
+    background-color: #545b62;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
+th a {
+    color: white;
+    text-decoration: none;
+}
+th a:hover {
+    text-decoration: underline;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #e9ecef;
+}
+td:last-child {
+    white-space: nowrap;
+}
+td a.button, td button {
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.book-form div {
+    margin-bottom: 15px;
+}
+.book-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.book-form input[type="text"],
+.book-form input[type="number"],
+.book-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.book-form input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.book-form .error-message {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 3px;
+}
+.book-form div:last-child {
+    margin-top: 20px;
+}
+.book-form .save-button {
+    margin-right: 10px;
+}

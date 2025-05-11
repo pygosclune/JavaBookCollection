@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}">Book Form</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${pageTitle}">Book Form</h1>
+
+    <form th:action="@{/save}" th:object="${book}" method="post" class="book-form">
+        <input type="hidden" th:field="*{id}" />
+
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" th:field="*{title}" />
+            <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}" class="error-message"></span>
+        </div>
+        <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" th:field="*{author}" />
+            <span th:if="${#fields.hasErrors('author')}" th:errors="*{author}" class="error-message"></span>
+        </div>
+        <div>
+            <label for="publicationYear">Publication Year:</label>
+            <input type="number" id="publicationYear" th:field="*{publicationYear}" />
+            <span th:if="${#fields.hasErrors('publicationYear')}" th:errors="*{publicationYear}" class="error-message"></span>
+        </div>
+        <div>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" th:field="*{genre}" />
+            <span th:if="${#fields.hasErrors('genre')}" th:errors="*{genre}" class="error-message"></span>
+        </div>
+        <div>
+            <label for="rating">Rating (1-5):</label>
+            <select id="rating" th:field="*{rating}">
+                <option value="">-- Select Rating --</option>
+                <option th:each="i : ${#numbers.sequence(1,5)}" th:value="${i}" th:text="${i}"></option>
+            </select>
+            <span th:if="${#fields.hasErrors('rating')}" th:errors="*{rating}" class="error-message"></span>
+        </div>
+        <div>
+            <label for="isRead">Read:</label>
+            <input type="checkbox" id="isRead" th:field="*{isRead}" />
+            <span th:if="${#fields.hasErrors('isRead')}" th:errors="*{isRead}" class="error-message"></span>
+        </div>
+
+        <div>
+            <button type="submit" class="button save-button">Save</button>
+            <a th:href="@{/}" class="button cancel-button">Cancel</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
