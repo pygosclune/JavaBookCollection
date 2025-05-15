@@ -11,7 +11,7 @@
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/pygosclune/JavaBookCollection.git
-    cd book-collection
+    cd JavaBookCollection
     ```
 
 2.  **Build and run the application using Maven:**
