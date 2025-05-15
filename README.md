@@ -2,7 +2,7 @@
 *  This project is pretty similar to [my old JS repo](https://github.com/pygosclune/js-library-page) 
 ## Prerequisites
 
-*   Java Development Kit (JDK) 17 or higher.
+*   JDK 21 or higher.
 *   Apache Maven 3.6.x or higher.
 *   An IDE (e.g., IntelliJ IDEA, Eclipse, VS Code with Java extensions) is recommended but not required.
 
